@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Javascript</title>
+		<script type="text/javascript">
+      function cliquer() {
+  			var r = parseInt(document.getElementById("1").value);
+				var l = parseInt(document.getElementById("2").value);
+				if(r != document.getElementById("1").value || l != document.getElementById("2").value)
+				{
+					return (alert('Error :('));
+				}
+        if (parseInt(document.getElementById("1").value) >= 0 && parseInt(document.getElementById("2").value) >= 0) {
+          if (document.getElementById("symb").value == '+') {
+            console.log(parseInt(document.getElementById("1").value) + parseInt(document.getElementById("2").value));
+            alert(parseInt(document.getElementById("1").value) + parseInt(document.getElementById("2").value));
+          }
+          if (document.getElementById("symb").value == '-') {
+            console.log(parseInt(document.getElementById("1").value) - parseInt(document.getElementById("2").value));
+            alert(parseInt(document.getElementById("1").value) - parseInt(document.getElementById("2").value));
+          }
+          if (document.getElementById("symb").value == '/' && parseInt(document.getElementById("2").value) != 0) {
+            console.log(parseInt(document.getElementById("1").value) / parseInt(document.getElementById("2").value));
+            alert(parseInt(document.getElementById("1").value) / parseInt(document.getElementById("2").value));
+          }
+          if (document.getElementById("symb").value == '*') {
+            console.log(parseInt(document.getElementById("1").value) * parseInt(document.getElementById("2").value));
+            alert(parseInt(document.getElementById("1").value) * parseInt(document.getElementById("2").value));
+          }
+          if (document.getElementById("symb").value == '%' && parseInt(document.getElementById("2").value) != 0) {
+            console.log(parseInt(document.getElementById("1").value) % parseInt(document.getElementById("2").value));
+            alert(parseInt(document.getElementById("1").value) % parseInt(document.getElementById("2").value));
+          }
+          if ((document.getElementById("symb").value == '%' || document.getElementById("symb").value == '/') && parseInt(document.getElementById("2").value) == 0) {
+            console.log("It’s over 9000!");
+            alert("It’s over 9000!");
+          }
+        }
+        else {
+          alert("Error :(");
+        }
+      }
+
+      function t() {
+        alert("Please, use me...");
+      }
+
+      window.setInterval(t, 30000);
+		</script>
+	</head>
+	<body>
+	    <input type="text" id="1"/>
+      <select id="symb">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+        <option value="%">%</option>
+      </select>
+      <input type="text" id="2"/>
+      <input type="submit" onclick="cliquer()" value="Try me!"/>
+	</body>
+</html>

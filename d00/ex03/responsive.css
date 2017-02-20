@@ -1,0 +1,80 @@
+		H1
+		{
+			text-align: center;
+			font-size: 2vw;
+			color:black;
+		}
+		#monimage
+		{
+			position: block;
+			right: 50%;
+			top: 20%;
+		}
+		td, th
+		{
+			font-size : 1vw;
+			border : 3px solid black;
+		}
+		#masse
+		{
+			font-weight : normal;
+			font-size : 1vw;
+			text-align: right;
+		}
+		#symb
+		{
+			font-weight : bold;
+			font-size: 2vw;
+			text-align: center;
+		}
+		.non-metaux
+		{
+			background-color: purple;
+		}
+		.gaz-nobles
+		{
+			background-color: cyan;
+		}
+		.metaux-alcalins
+		{
+			background-color: orange;
+		}
+		.metalloides
+		{
+			background-color: lightgreen;
+		}
+		.halogenes
+		{
+			background-color: pink;
+		}
+		.empty
+		{
+			border: 0px;
+		}
+		.metaux-transition
+		{
+			background-color: yellow;
+		}
+		.metaux-pauvres
+		{
+			background-color: brown;
+		}
+		.alcalino-terreux
+		{
+			background-color: lightblue;
+		}
+		.lanthanides
+		{
+			background-color: green;
+		}
+		.actinides
+		{
+			background-color: beige;
+		}
+		#num
+		{
+			font-weight : normal;
+			font-size : 1vw;
+			text-align: left;
+		}
+		body {background-color: white;}
